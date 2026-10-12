@@ -2,14 +2,21 @@
 
 A 4-key vertical-scrolling rhythm game where you **type** the falling letters. Each song gets a poem; its letters fall as diamond notes timed to the song's beat, and you hit each one by typing that letter as it reaches the line.
 
-## Play
+## Play (no install)
+
+1. Download **[TypeSu.html](TypeSu.html)** (or the whole repo: Code → Download ZIP).
+2. Double-click it. It opens in your browser; nothing to install.
+3. Press **Enter** to play the built-in demo track, or **Load audio file…** to use your own music (mp3, ogg, wav, flac, m4a).
+
+Works offline. Chrome, Edge and Firefox are tested; fonts fall back to system fonts without internet.
+
+## Develop
 
 ```bash
 npm install
-npm run dev
+npm run dev            # live-reloading dev server
+npm run build:single   # rebuild TypeSu.html after changing the code
 ```
-
-Open the printed local URL, press **Enter** to play the built-in demo track, or **Load audio file…** to use your own music (mp3, ogg, wav, flac, m4a).
 
 | Key | Action |
 | --- | --- |
@@ -47,6 +54,7 @@ tests/      unit tests for the solver, generator and judging
 - `npm run dev`: local dev server
 - `npm test`: unit tests (Vitest)
 - `npm run build`: typecheck and production build into `dist/`
+- `npm run build:single`: build the one-file `TypeSu.html` in the repo root
 
 ## Poems
 
