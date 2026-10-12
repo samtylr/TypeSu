@@ -1,0 +1,12 @@
+{
+  // Static site on Cloudflare Workers, served at https://typesu.samtylr.com
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "typesu",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./.single",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [{ "pattern": "typesu.samtylr.com", "custom_domain": true }],
+  "workers_dev": true
+}

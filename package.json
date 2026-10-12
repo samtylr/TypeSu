@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "build:single": "tsc --noEmit && vite build --mode single && node -e \"require('fs').copyFileSync('.single/index.html','TypeSu.html')\""
+    "build:single": "tsc --noEmit && vite build --mode single && node -e \"require('fs').copyFileSync('.single/index.html','TypeSu.html')\"",
+    "deploy": "npm run build:single && wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "typescript": "^7.0.2",
     "vite": "^6.4.4",
     "vite-plugin-singlefile": "^2.3.3",
-    "vitest": "^3.2.7"
+    "vitest": "^3.2.7",
+    "wrangler": "^4.149.0"
   },
   "dependencies": {
     "web-audio-beat-detector": "^8.2.39"
