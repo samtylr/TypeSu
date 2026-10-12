@@ -1,0 +1,30 @@
+{
+  "name": "typesu",
+  "version": "0.1.0",
+  "description": "A 4-key vertical-scrolling rhythm game where you type the falling letters of a poem in time with the music.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samtylr/typesu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samtylr/typesu/issues"
+  },
+  "homepage": "https://github.com/samtylr/typesu#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^6.4.4",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "web-audio-beat-detector": "^8.2.39"
+  },
+  "private": true,
+  "type": "module"
+}
